@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link href="https://fonts.googleapis.com/css?family=Concert+One|Sacramento" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
     <link rel="stylesheet" href="style/main.css">
@@ -13,38 +20,39 @@
 </head>
 
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active">
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact / About</a>
-                    </li>
-                    <li>
-                        <a href="shop.html">Shop</a>
-                    </li>
-                    <li>
-                        <a href="new.html">New Products</a>
-                    </li>
-                    <li>
-                        <a href="media.html">Media</a>
-                    </li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Sweet Escapes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navTop">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item nav-font active">
+                    <a href="index.html">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item nav-font">
+                    <a href="cakes.html">Cakes</a>
+                </li>
+                <li class="nav-item nav-font">
+                    <a href="macarons.html">Macarons</a>
+                </li>
+                <li class="nav-item nav-font">
+                    <a href="pies.html">Pies + Tarts</a>
+                </li>
+                <li class="nav-item nav-font">
+                    <a href="donuts.html">Donuts</a>
+                </li>
+                <li class="nav-item nav-font">
+                    <a href="candies.html">Candies</a>
+                </li>
+                <li class="nav-item nav-font">
+                    <a href="contact.html">Contact Us</a>
+                </li>
+            </ul>
         </div>
-    </div>
-    <div id="sweets-carousel" class="carousel slide slider" data-ride="carousel">
+    </nav>
+    <div id="sweets-carousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#sweets-carousel" data-slide-to="0" class="active"></li>
             <li data-target="#sweets-carousel" data-slide-to="1"></li>
@@ -56,45 +64,45 @@
         </ol>
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-                <video src="sweet_word.mov" autoplay="true" loop="true" class="d-block w-100 vid" alt="First Slide"></video>
+                <img src="img/bakeryshowcase.jpg" class="d-block w-100" alt="First Slide">
                 <div class="carousel-caption">
-                    <h3>Mini Cake</h3>
+                    <h3>Sweet Escapes</h3>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img/cakepop.jpg" class="d-block w-100" alt="Second Slide">
+                <a href="cakes.html"><img src="img/cakepop.jpg" class="d-block w-100" alt="Second Slide"></a>
                 <div class="carousel-caption">
-                    <h3>Cake Pops</h3>
+                    <h3>Cakes</h3>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img/macarons.jpg" class="d-block w-100" alt="Third Slide">
+                <a href="macarons.html"><img src="img/macarons.jpg" class="d-block w-100" alt="Third Slide"></a>
                 <div class="carousel-caption">
                     <h3>Macarons</h3>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img/cupcake.jpeg" class="d-block w-100" alt="Forth Slide">
+                <a href="pies.html"><img src="img/pies.jpg" class="d-block w-100" alt="Forth Slide"></a>
                 <div class="carousel-caption">
-                    <h3>Cupcake</h3>
+                    <h3>Pies + Tarts</h3>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img/donut.jpg" class="d-block w-100" alt="Fifth SLide">
+                <a href="donuts.html"> <img src="img/donut.jpg" class="d-block w-100" alt="Fifth SLide"></a>
                 <div class="carousel-caption">
                     <h3>Donuts</h3>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img/bonboncandy.jpg" class="d-block w-100" alt="Sixth Slide">
+                <a href="candies.html"><img src="img/bonboncandy.jpg" class="d-block w-100" alt="Sixth Slide"></a>
                 <div class="carousel-caption">
-                    <h3>Bourbon Raspberry Candies</h3>
+                    <h3>Candies</h3>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img/lolli.jpg" class="d-block w-100" alt="Seventh Slide">
+                <a href="contact.html"><img src="img/lolli.jpg" class="d-block w-100" alt="Seventh Slide"></a>
                 <div class="carousel-caption">
-                    <h3>Lollipops</h3>
+                    <h3>Contact Us</h3>
                 </div>
             </div>
             <a href="#sweets-carousel" class="left carousel-control" role="button" data-slide="prev">
@@ -107,13 +115,9 @@
             </a>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
     <script>
-        window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+        $("#sweets-carousel").carousel();
     </script>
-    <script src="../../assets/js/vendor/popper.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
