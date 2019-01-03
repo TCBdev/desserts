@@ -1,57 +1,117 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 body {
   background: #F7CFD6;
   opacity: 0.6;
-  margin: 0;
   line-height: 1.5;
   color: #FFFFFF;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .navbar a:hover {
   text-decoration: none;
   color: #2febf1;
-  transition: all 0.5s ease-out; }
+  transition: all 0.5s ease-out;
+}
 
 .navbar .active {
-  border-bottom: #2febf1 5px solid; }
+  border-bottom: #2febf1 3px solid;
+}
 
 .navbar .nav-font {
   margin: 0.3rem 1.9rem 0 0;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+}
 
-h3 {
+
+.carousel-item h3 {
   position: absolute;
-  top: -1250%;
+  margin: 0;
+  color: #FFFFFF;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   font-family: 'Sacramento', cursive;
   font-size: 6rem;
+  font-weight: 600;
   text-shadow: 2px 2px #0000007A;
-  text-align: center; }
+}
 
 #sweets-carousel img {
-  height: 100vh; }
+  height: 100vh;
+}
 
 #sweets-carousel .carousel-indicators {
   position: absolute;
-  top: 87%; }
+  margin-bottom: 7%;
+}
 
 .soon h1 {
-  padding-top: 5rem;
+  padding: 0;
+  margin: 25% auto;
   font-family: 'Concert One', cursive;
-  font-size: 13rem;
+  font-size: 10vh;
   color: #FFFFFF;
   text-align: center;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+}
 
 @media screen and (max-width: 960px) {
   .container {
-    padding: 0 3rem; }
-  #sweets-carousel img {
-    height: 100%; } }
+    padding: 0 3rem;
+  }
+
+  #sweets-carousel {
+    height: 100%;
+    width: 50rem;
+  }
+
+  /*cake macarons pie donuts  contact*/
+  #sweets-carousel img .sweet {
+    position: relative;
+    left: -200px;
+    height: 100vh;
+    width: 100%;
+  }
+
+  #sweets-carousel img .candy {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .carousel-item h3 {
+    position: absolute;
+    margin: 0;
+    color: white;
+    left: 24%;
+    top: 42%;
+    transform: translate(-50%, -50%);
+    font-family: 'Sacramento', cursive;
+    font-size: 4rem;
+    text-shadow: 2px 2px #0000007A;
+  }
+
+  #sweets-carousel .carousel-indicators {
+    position: absolute;
+    padding: 0;
+    margin-bottom: 10%;
+    left: -50%;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  .soon {
+    font-size: 3rem;
+  }
+}

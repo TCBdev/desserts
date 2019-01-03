@@ -39,9 +39,29 @@ body {
   overflow-x: hidden; }
 
 img {
-  width: 30%; }
+  width: 50%; }
 
 #cakes {
   display: grid;
+  grid-gap: 0;
   grid-template-areas: 'cake1 cakepop2 cupcake3' 'cakepop1 cupcake1 cakepop3' 'cake2 cupecake2 cake3';
   grid-template-columns: repeat(3, 1fr); }
+
+@media screen and (max-width: 960px) {
+  .container {
+    padding: 0 3rem; }
+  #sweets-carousel {
+    height: 100%;
+    width: 50rem; }
+    #sweets-carousel img {
+      position: relative;
+      left: -200px;
+      height: 100vh;
+      width: 100%; }
+    #sweets-carousel h3 {
+      position: center;
+      font-family: 'Sacramento', cursive;
+      font-size: 4rem;
+      text-shadow: 2px 2px #0000007A; }
+  .soon {
+    font-size: 3rem; } }
