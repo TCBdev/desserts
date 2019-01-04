@@ -65,6 +65,10 @@ body {
 }
 
 @media screen and (max-width: 960px) {
+  * {
+    overflow: hidden;
+  }
+
   .container {
     padding: 0 3rem;
   }
@@ -98,17 +102,20 @@ body {
     font-family: 'Sacramento', cursive;
     font-size: 4rem;
     text-shadow: 2px 2px #0000007A;
+
   }
 
   #sweets-carousel .carousel-indicators {
     position: absolute;
+    display: flex;
     padding: 0;
-    margin-bottom: 10%;
-    left: -50%;
+    margin: 0 20% 10% -30%;
+    /*transform: translate(50%, -50%);*/
   }
 
   .navbar {
     width: 100%;
+    overflow: hidden;
   }
 
   .soon {

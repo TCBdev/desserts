@@ -1,67 +1,122 @@
-* {
-  box-sizing: border-box;
+body,
+html {
+  height: 100%;
   margin: 0;
-  padding: 0; }
-
-body {
-  background: #F7CFD6;
-  opacity: 0.6;
-  margin: 0;
+  background: #777777;
+  opacity: 0.95;
+  font-size: 16px;
+  font-family: 'Open Sans Condensed', cursive;
+  font-weight: 400;
   line-height: 1.5;
   color: #FFFFFF;
-  overflow: hidden; }
+  overflow-x: hidden;
+}
+
+.navbar {
+  background-color: #575757;
+  z-index: 10;
+}
+
+a {
+  color: #ebe9e9;
+}
 
 .navbar a:hover {
   text-decoration: none;
   color: #2febf1;
-  transition: all 0.5s ease-out; }
+  transition: all 0.5s ease-out;
+}
 
 .navbar .active {
-  border-bottom: #2febf1 5px solid; }
+  border-bottom: #2febf1 5px solid;
+}
 
 .navbar .nav-font {
   margin: 0.3rem 1.9rem 0 0;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
-  color: #FFFFFF; }
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
-
-body {
-  background: #F7CFD6;
-  margin: 0;
-  line-height: 1.5;
   color: #FFFFFF;
-  overflow-x: hidden; }
+}
 
-img {
-  width: 50%; }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
-#cakes {
-  display: grid;
-  grid-gap: 0;
-  grid-template-areas: 'cake1 cakepop2 cupcake3' 'cakepop1 cupcake1 cakepop3' 'cake2 cupecake2 cake3';
-  grid-template-columns: repeat(3, 1fr); }
+.cake1,
+.cake2,
+.cake3 {
+  position: relative;
+  opacity: 0.70;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
-@media screen and (max-width: 960px) {
-  .container {
-    padding: 0 3rem; }
-  #sweets-carousel {
-    height: 100%;
-    width: 50rem; }
-    #sweets-carousel img {
-      position: relative;
-      left: -200px;
-      height: 100vh;
-      width: 100%; }
-    #sweets-carousel h3 {
-      position: center;
-      font-family: 'Sacramento', cursive;
-      font-size: 4rem;
-      text-shadow: 2px 2px #0000007A; }
-  .soon {
-    font-size: 3rem; } }
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment: fixed;
+}
+
+.cake1 {
+  background-image: url('../img/cakes/cake1.jpg');
+  min-height: 100%;
+}
+
+.cake2 {
+  background-image: url('../img/cakes/cakepop3.jpg');
+  min-height: 400px;
+}
+
+.cake3 {
+  background-image: url('../img/cakes/cupcake2.jpg');
+  min-height: 400px;
+}
+
+.section {
+  text-align: center;
+  padding: 50px 80px;
+}
+
+.section-light {
+  background-color: #F4F4F4;
+  color: #666666;
+}
+
+.section-dark {
+  background-color: #2B333B;
+  color: #DDDDDD;
+}
+
+.caketext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.caketext .border {
+  background-color: #FFFFFF81;
+  color: #2C2C2C;
+  padding: 1.6rem;
+}
+
+.caketext .border .transition {
+  background-color: transparent;
+}
+
+@media(max-width:568px) {
+
+  .cake1,
+  .cake2,
+  .cake3 {
+    background-attachment: scroll;
+  }
+}
