@@ -30,6 +30,10 @@ body {
   color: #FFFFFF;
 }
 
+#mobile {
+  display: hidden;
+}
+
 
 .carousel-item h3 {
   position: absolute;
@@ -53,6 +57,19 @@ body {
   margin-bottom: 7%;
 }
 
+.carousel-indicators .active {
+  height: 5px;
+  background-color: #2febf1;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  margin: 0 5%;
+  z-index: 5;
+  color: #2febf1;
+}
+
 .soon h1 {
   padding: 0;
   margin: 25% auto;
@@ -69,54 +86,78 @@ body {
     overflow: hidden;
   }
 
-  .container {
-    padding: 0 3rem;
-  }
-
-  #sweets-carousel {
-    height: 100%;
-    width: 50rem;
-  }
-
-  /*cake macarons pie donuts  contact*/
-  #sweets-carousel img .sweet {
-    position: relative;
-    left: -200px;
-    height: 100vh;
-    width: 100%;
-  }
-
-  #sweets-carousel img .candy {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-  }
-
-  .carousel-item h3 {
-    position: absolute;
-    margin: 0;
-    color: white;
-    left: 24%;
-    top: 42%;
-    transform: translate(-50%, -50%);
-    font-family: 'Sacramento', cursive;
-    font-size: 4rem;
-    text-shadow: 2px 2px #0000007A;
-
-  }
-
-  #sweets-carousel .carousel-indicators {
-    position: absolute;
-    display: flex;
-    padding: 0;
-    margin: 0 20% 10% -30%;
-    /*transform: translate(50%, -50%);*/
-  }
-
   .navbar {
     width: 100%;
     overflow: hidden;
   }
+
+  .center-caption h3 {
+    font-size: 15vh;
+    text-align: center;
+  }
+
+  .carousel-indicators {
+    position: absolute;
+    top: 87%;
+  }
+
+  /*
+    #sweets-carousel {
+      display: hidden;
+    }
+
+    #mobile {
+      display: show;
+    }
+
+  .escapes,
+  .cakes,
+  .macarons,
+  .pies,
+  .donuts,
+  .candies,
+  .contact {
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .escapes {
+    background-image: url('../img/bakeryshowcase.jpg');
+    min-height: 100%;
+  }
+
+  .cakes {
+    background-image: url('../img/cakepop.jpg');
+    min-height: 100%;
+  }
+
+  .macarons {
+    background-image: url('../img/macarons.jpg');
+    min-height: 100%;
+  }
+
+  .pies {
+    background-image: url('../img/pies.jpg');
+    min-height: 100%;
+  }
+
+  .donuts {
+    background-image: url('../img/donut.jpg');
+    min-height: 100%;
+  }
+
+  .candies {
+    background-image: url('../img/bonboncandy.jpg');
+    min-height: 100%;
+  }
+
+  .contact {
+    background-image: url('../img/lolli.jpg');
+    min-height: 100%;
+  }*/
 
   .soon {
     font-size: 3rem;
