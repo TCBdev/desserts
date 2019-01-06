@@ -107,6 +107,27 @@ span {
     z-index: 4;
 }
 
+#imagegrid .imgsize {
+    display: grid;
+    grid-template-areas: 'img1 img2 img3';
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.img1 {
+    height: 83vh;
+    grid-area: img1;
+}
+
+.img2 {
+    height: 83vh;
+    grid-area: img2;
+}
+
+.img3 {
+    height: 83vh;
+    grid-area: img3;
+}
+
 #stats .stats-cover {
     padding: 0 0.8rem;
     display: grid;
