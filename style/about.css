@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    background: #fdff8c;
+    opacity: 0.95;
+    font-size: 16px;
+    font-family: 'Open Sans Condensed', cursive;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #1a1b1b;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: transparent;
+    z-index: 10;
+}
+
+a {
+    color: #1a1b1b;
+}
+
+.navbar a:hover {
+    text-decoration: none;
+    color: #555555;
+    transition: all 0.5s ease-out;
+}
+
+.navbar .active {
+    border-bottom: #1a1b1b 5px solid;
+}
+
+.navbar .nav-font {
+    margin: 0.3rem 1.9rem 0 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.navbar li {
+    list-style-type: none;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.about {
+    margin: 80px 5%;
+    font-size: 1.7rem;
+}
+
+.video-bg {
+    background: #fdff8c;
+    opacity: 0.9;
+}
+
+.header {
+    margin-right: 5%;
+    text-align: end;
+    font-size: 6rem;
+    z-index: 10;
+}
+
+.rec-header {
+    position: relative;
+    margin-right: 5%;
+    text-align: end;
+    font-size: 6rem;
+    z-index: 10;
+}
+
+#ylwbg {
+    background: #fdff8c;
+    width: 400px;
+    z-index: 1;
+
+}
+
+#darkbg {
+    background: #1a1b1b;
+    width: 50%;
+    z-index: 2;
+}
+
+span {
+    position: absolute;
+    mix-blend-mode: difference;
+    color: #fdff8c;
+    z-index: 3;
+}
+
+#makedark {
+    background-color: #1a1b1b;
+    mix-blend-mode: screen;
+    width: 50%;
+    z-index: 4;
+}
+
+#stats .stats-cover {
+    padding: 0 0.8rem;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas: 'food-cake food-pie food-macaron food-choc food-donuts'
+        'counter-cake counter-pie counter-macaron counter-choc counter-donuts'
+        'stats-cake stats-pie stats-macarons stats-choc stats-donuts';
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#recipes .recipe {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas: 'recipe1 recipe2';
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.recipe1 {
+    padding-left: 12%;
+    font-size: 1.3rem;
+    grid-area: recipe1;
+}
+
+.recipe2 {
+    padding: 0 12%;
+    font-size: 1.3rem;
+    grid-area: recipe2;
+}
+
+.food-cake {
+    grid-area: food-cake;
+}
+
+.food-pie {
+    grid-area: food-pie;
+}
+
+.food-macaron {
+    grid-area: food-macaron;
+}
+
+.food-choc {
+    grid-area: food-choc;
+}
+
+.food-donuts {
+    grid-area: food-donuts;
+}
+
+.counter-cake {
+    grid-area: counter-cake;
+}
+
+.counter-pie {
+    grid-area: counter-pie;
+}
+
+.counter-macaron {
+    grid-area: counter-macaron;
+}
+
+.counter-choc {
+    grid-area: counter-choc;
+}
+
+.counter-donuts {
+    grid-area: counter-donuts;
+}
+
+.stats-cake {
+    grid-area: stats-cake;
+}
+
+.stats-pie {
+    grid-area: stats-pie;
+}
+
+.stats-macaron {
+    grid-area: stats-macaron;
+}
+
+.stats-choc {
+    grid-area: stats-choc;
+}
+
+.stats-donuts {
+    grid-area: stats-donuts;
+}
+
+.stats-desc {
+    display: inline-block;
+    font-size: 2rem;
+}
+
+.food {
+    margin-left: 32%;
+    display: inline-block;
+    width: 5vw;
+    min-width: 40%;
+}
+
+
+.section {
+    display: inline-block;
+    font-size: 6rem;
+    text-align: center;
+    padding: 50px 80px;
+    width: 100vw;
+}
+
+.section-dark {
+    background-color: #1a1b1b;
+    color: #fdff8c;
+}
+
+.counter {
+    display: inline-block;
+    font-size: 5vw;
+    text-align: center;
+}
+
+@media screen and (max-width: 769px) {
+    #stats .stats-cover {
+        padding: 0 0.8rem;
+        display: grid;
+        grid-gap: 30px;
+        grid-template-areas: 'food-cake'
+            'counter-cake'
+            'stats-cake'
+            'food-pie'
+            'counter-pie'
+            'stats-pie'
+            'food-macaron'
+            'counter-macaron'
+            'stats-macarons'
+            'food-choc'
+            'counter-choc'
+            'stats-choc'
+            'food-donuts'
+            'counter-donuts'
+            'stats-donuts';
+        grid-template-columns: 1fr;
+    }
+
+    .food {
+        margin-left: 32%;
+        display: block;
+        width: 7vw;
+        min-width: 40%;
+    }
+
+    .counter {
+        display: inline-block;
+        font-size: 8vw;
+        text-align: center;
+    }
+
+    .stats-desc {
+        display: inline-block;
+        font-size: 1.65rem;
+    }
+
+    .stats-cover>div:nth-child(even) {
+        background-color: #2B333B;
+        color: #DDDDDD;
+    }
+}

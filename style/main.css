@@ -62,6 +62,12 @@ body {
   background-color: #2febf1;
 }
 
+.carousel-indicators:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+  transition: transform .35s ease-in;
+}
+
 .carousel-control {
   position: absolute;
   top: 50%;
